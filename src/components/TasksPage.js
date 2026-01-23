@@ -4,7 +4,7 @@
 
 import React, { useEffect, useState } from 'react';
 import BackButton from './BackButton';
-import ProgressBar from './ProgressBar';
+// import ProgressBar from './ProgressBar';
 import Task from './Task';
 import {
   clearAnswersByIds,
@@ -30,6 +30,7 @@ function TasksPage({ tasks, goBack, rangeLabel }) {
       }
     });
 
+    
     setCorrectWordCount(correct);
     setTotalWordCount(total);
   };
