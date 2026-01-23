@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/cht_gruffalo/static/css/main.9ede01ce.css",
+    "main.js": "/cht_gruffalo/static/js/main.60af8e2c.js",
+    "static/js/453.d37bcb50.chunk.js": "/cht_gruffalo/static/js/453.d37bcb50.chunk.js",
+    "index.html": "/cht_gruffalo/index.html",
+    "main.9ede01ce.css.map": "/cht_gruffalo/static/css/main.9ede01ce.css.map",
+    "main.60af8e2c.js.map": "/cht_gruffalo/static/js/main.60af8e2c.js.map",
+    "453.d37bcb50.chunk.js.map": "/cht_gruffalo/static/js/453.d37bcb50.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9ede01ce.css",
+    "static/js/main.60af8e2c.js"
+  ]
+}
