@@ -1,0 +1,5 @@
+1. в input.txt вставить инфу
+2. в терминател написать node 1generateJson.1generateJson
+3. Из tasks_chtenie.json скопировать данные и вставить в tasks_chtenie_panda.json в pulic
+
+generate-pages.js - для создания шаблона для txt
