@@ -1,0 +1,4 @@
+Чтобы создать json - node 1generateJson.json, 
+скопировать данные из tasks_chtenie.json
+---
+Чтобы создать файл шаблон - node generate-pages.js, скопировать данные из pages.txt
