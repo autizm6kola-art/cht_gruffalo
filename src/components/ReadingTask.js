@@ -9,7 +9,7 @@ import { createSpeechRecognizer } from "../utils/bookUtils";
 import { addTodayWords } from "../utils/dailyStats";
 
 
-const APP_ID = "panda"; // 👈 уникальное имя книги
+const APP_ID = "chtenie_gruffalo"; // 👈 уникальное имя книги
 
 
 
