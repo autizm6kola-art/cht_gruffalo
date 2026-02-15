@@ -6,6 +6,8 @@ import styles from '../styles/ReadingPage.module.css';
 import SentenceDisplay from "./SentenceDisplay";
 import { saveCorrectInput, getUserInputs, saveUserInputs } from "../utils/storage";
 import { createSpeechRecognizer } from "../utils/bookUtils";
+import { addTodayWords } from "../utils/dailyStats";
+
 
 function normalizeToArray(text) {
   return text
@@ -53,8 +55,22 @@ export default function ReadingTask({ task }) {
       }
     });
 
-    setHighlightedIndexes(newMatchedIndexes);
-    saveUserInputs(task.id, [newMatchedIndexes]);
+    // Получаем старые сохранённые индексы
+const saved = getUserInputs(task.id);
+const oldIndexes = saved?.[0] || [];
+
+// Определяем НОВЫЕ слова
+const trulyNew = newMatchedIndexes.filter(
+  (index) => !oldIndexes.includes(index)
+);
+
+// 👉 увеличиваем счётчик сегодняшнего дня
+addTodayWords(trulyNew.length);
+
+// Сохраняем обновлённые индексы
+setHighlightedIndexes(newMatchedIndexes);
+saveUserInputs(task.id, [newMatchedIndexes]);
+
 
     if (newMatchedIndexes.length >= totalWords / 2) {
       saveCorrectInput(task.id, 0);
